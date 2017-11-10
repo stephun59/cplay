@@ -20,27 +20,27 @@ $errors = "";
 $success = "";
 if( isset( $_POST['name'] ) ){
     if( empty( $_POST['name'] ) ){
-        $errors .= "<li>Vous deveez renseigner le nom de votre jeu</li>";
+        $errors .= "<li>Vous devez renseigner le nom de votre jeu</li>";
     }
 
     if( empty( $_POST['description'] ) ){
-        $errors .= "<li>Vous deveez renseigner la description de votre jeu</li>";
+        $errors .= "<li>Vous devez renseigner la description de votre jeu</li>";
     }
 
     if( empty( $_POST['type'] ) ){
-        $errors .= "<li>Vous deveez renseigner le type de votre jeu</li>";
+        $errors .= "<li>Vous devez renseigner le type de votre jeu</li>";
     }
 
     if( empty( $_POST['editor'] ) ){
-        $errors .= "<li>Vous deveez renseigner l'éditeur de votre jeu</li>";
+        $errors .= "<li>Vous devez renseigner l'éditeur de votre jeu</li>";
     }
 
     if( empty( $_POST['developer'] ) ){
-        $errors .= "<li>Vous deveez renseigner le développeur de votre jeu</li>";
+        $errors .= "<li>Vous devez renseigner le développeur de votre jeu</li>";
     }
 
     if( empty( $_POST['picture_link'] ) && $_FILES['picture_file']['error'] != 0 ){
-        $errors .= "<li>Vous deveez télécharger ou ajouter le lien d'un média pour votre jeu</li>";
+        $errors .= "<li>Vous devez télécharger ou ajouter le lien d'un média pour votre jeu</li>";
     }
 
     if( empty( $errors ) ){
